@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+	<script src="libs/fancybox/fancybox.umd.js"></script>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/main.js"></script>
+		
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="_container">
+				<nav class="top-nav">
+					<div class="">
+						<ul id="top-menu" class="top-menu">
+							<li class="top-menu-item">
+								<a href="https://moskva.standart-express.ru/o-kompanii/">О компании</a>
+							</li>
+							<li class="top-menu-item">
+								<a href="https://moskva.standart-express.ru/vakansii/">Вакансии</a>
+							</li>
+							<li class="top-menu-item">
+								<a href="/blog/">Новости</a>
+							</li>
+							<li class="top-menu-item">
+								<a href="https://moskva.standart-express.ru/kontakty/">Контакты</a>
+							</li>
+							<li class="top-menu-item tophidden">
+								<a href="/equipment/">Аренда спецтехники</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="region-select"> 
+					Ваш город: 
+					<span class="current-region popRegionSelector" style="cursor: pointer;">Москва</span>
+				</div>
+				<div class="call-time">Прием звонков: 8:00-20:00</div>
+			</div>
+		</div>
+		<div class="header__main">
+			<div class="_container">
+				<div class="header__burger">
+					<div class="burger">
+						<span></span>
+					</div>
+				</div>
+				<a hrf="https://moskva.standart-express.ru/" rel="home" class="header__logo logo">
+					<img src="https://moskva.standart-express.ru/wp-content/webp-express/webp-images/themes/standart-express/assets/img/logo.png.webp" alt="Стандарт Экспресс">
+				</a>
+				<div class="header__info"> 
+					<a href="mailto:info@standart-express.ru" class="mailto">info@standart-express.ru</a> 
+					<span>Выполняем заказы: 24/7</span>
+				</div>
+				<div class="header__phones"> 
+					<a href="tel:8 (800) 600-22-78" class="phone">8(800) 600-22-78</a> 
+					<a href="tel:8 (963) 463-60-46" class="phone mobhide">8(963) 463-60-46</a>
+					<div class="mob-region-select"> 
+						Ваш город: 
+						<span class="current-region popRegionSelector pum-trigger" style="cursor: pointer;">Москва</span>
+					</div>
+				</div>
+				<div class="header__contacts-mobile">
+					<a href="tel:8 (963) 463-60-46" class="phone">8(963) 463-60-46</a>
+					<div class="header__contacts-city">Ваш город: Москва</div>
+				</div>
+				<div class="header__contacts">
+					<div class="button_cos">
+						<div class="work_now">
+							<div class="pulser green"></div>
+							Работаем сейчас
+						</div> 
+						<button class="call_btn" style="cursor: pointer;">Перезвоните мне</button>
+					</div>
+					<div class="social-links"> 
+						<a href="https://api.whatsapp.com/send?phone=79274527554" target="_blank" class="" data-title="Напишите нам в WhatsApp"> 
+							<i class="social-icon icon-whatsapp"></i> 
+						</a>
+						<a href="https://t.me/standartexpress_ru" target="_blank" class="" data-title="Напишите нам в Telegram"> 
+							<i class="social-icon icon-paper-plane"></i> 
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="main-nav">
+			<div class="_container">
+				<div class="">
+					<ul id="primary" class="menu">
+						<li class="">
+							<a href="/" aria-current="page">Грузчики</a>
+						</li>
+						<li class="">
+							<a href="https://moskva.standart-express.ru/raznorabochie/">Разнорабочие</a>
+						</li>
+						<li class="">
+							<a href="https://moskva.standart-express.ru/gruzoperevozki/">Грузоперевозки</a>
+						</li>
+						<li class="">
+							<a href="https://moskva.standart-express.ru/services/ofisnyj-pereezd/">Переезды</a>
+						</li>
+						<li class="">
+							<a href="/juridicheskim-licam/">Юридическим лицам</a>
+						</li>
+						<li class="">
+							<a href="/equipment/">Аренда спецтехники</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="header__menu popup__wrapper">
+			<div class="popup__opacity"></div>
+			<div class="header__burger">
+				<div class="burger">
+					<span></span>
+				</div>
+			</div>
+			<div class="_container">
+				<div class="header__menu-row">
+					<div class="header__menu-column">
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Грузчики</a>
+							</li>
+							<li>
+								<a href="">Подъем/спуск на этаж</a>
+							</li>
+							<li>
+								<a href="">Стоимость грузчиков</a>
+							</li>
+							<li>
+								<a href="">Вывоз мусора/материалов</a>
+							</li>
+							<li>
+								<a href="">Грузчики на производство</a>
+							</li>
+							<li>
+								<a href="">Грузчики на разовую работу</a>
+							</li>
+							<li>
+								<a href="">Грузчики на погрузочно-разгрузочные работы</a>
+							</li>
+						</ul>
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Юридическим лицам</a>
+							</li>
+							<li>
+								<a href="">Транспортным компаниям</a>
+							</li>
+							<li>
+								<a href="">Аутсорсинг персонала</a>
+							</li>
+							<li>
+								<a href="">Складские работы</a>
+							</li>
+							<li>
+								<a href="">Маркировочные работы</a>
+							</li>
+						</ul>
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Физическим лицам</a>
+							</li>
+							<li>
+								<a href="">Перевозка вещей</a>
+							</li>
+							<li>
+								<a href="">Перевозка мебели</a>
+							</li>
+							<li>
+								<a href="">Перевозка бытовой техники</a>
+							</li>
+							<li>
+								<a href="">Вывоз строительного мусора</a>
+							</li>
+							<li>
+								<a href="">Перевозка мебели на дачу</a>
+							</li>
+							<li>
+								<a href="">Упаковка мебели</a>
+							</li>
+							<li>
+								<a href="">Перевозка холодильника</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__menu-column">
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Такелажные работы</a>
+							</li>
+							<li>
+								<a href="">Промышленный такелаж</a>
+							</li>
+							<li>
+								<a href="">Перевозка банкоматов</a>
+							</li>
+							<li>
+								<a href="">Такелаж оборудования и станков</a>
+							</li>
+							<li>
+								<a href="">Перевозка сейфов и железной мебели</a>
+							</li>
+							<li>
+								<a href="">Перевозка пианино и рояля</a>
+							</li>
+							<li>
+								<a href="">Такелаж оборудования</a>
+							</li>
+							<li>
+								<a href="">Такелаж медицинского оборудования</a>
+							</li>
+							<li>
+								<a href="">Такелаж станков</a>
+							</li>
+						</ul>
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Офисный переезд</a>
+							</li>
+							<li>
+								<a href="">Газель для междугородних перевозок</a>
+							</li>
+							<li>
+								<a href="">Упаковка хрупких вещей</a>
+							</li>
+						</ul>
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Грузоперевозки</a>
+							</li>
+							<li>
+								<a href="">Городские перевозки</a>
+							</li>
+							<li>
+								<a href="">Доставка по городу</a>
+							</li>
+							<li>
+								<a href="">Междугородние</a>
+							</li>
+							<li>
+								<a href="">Негабаритные</a>
+							</li>
+							<li>
+								<a href="">Газель для перевозки мебели</a>
+							</li>
+							<li>
+								<a href="">Перевозка строительных материалов</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__menu-column">
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Разнорабочие</a>
+							</li>
+							<li>
+								<a href="">Уборка территории</a>
+							</li>
+							<li>
+								<a href="">Разнорабочие на стройку</a>
+							</li>
+							<li>
+								<a href="">Рытье траншей и ям</a>
+							</li>
+							<li>
+								<a href="">Уборка листьев</a>
+							</li>
+							<li>
+								<a href="">Уборка снега</a>
+							</li>
+						</ul>
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Демонтажные работы</a>
+							</li>
+							<li>
+								<a href="">Демонтаж оборудования</a>
+							</li>
+							<li>
+								<a href="">Демонтаж дома</a>
+							</li>
+							<li>
+								<a href="">Демонтаж аварийного здания</a>
+							</li>
+							<li>
+								<a href="">Демонтаж промышленных зданий</a>
+							</li>
+							<li>
+								<a href="">Демонтаж фундамента</a>
+							</li>
+						</ul>
+						<ul class="header__menu-list">
+							<li>
+								<a href="">Переезд</a>
+							</li>
+							<li>
+								<a href="">Переезд под ключ</a>
+							</li>
+							<li>
+								<a href="">Переезд Газелью</a>
+							</li>
+							<li>
+								<a href="">Квартирный переезд</a>
+							</li>
+							<li>
+								<a href="">Переезд дома/коттеджа</a>
+							</li>
+							<li>
+								<a href="">Дачный переезд</a>
+							</li>
+							<li>
+								<a href="">Мувинг</a>
+							</li>
+							<li>
+								<a href="">Газель для междугородних перевозок</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__menu-column header__menu-column-last">
+						<ul class="header__menu-list">
+							<li>
+								<a href="">О компании</a>
+							</li>
+							<li>
+								<a href="">Вакансии</a>
+							</li>
+							<li>
+								<a href="">Новости</a>
+							</li>
+							<li>
+								<a href="">Контакты</a>
+							</li>
+							<li>
+								<a href="">Аренда спецтехники</a>
+							</li>
+						</ul>
+						<div class="header__menu-info">
+							Принимаем звонки ежедневно 
+							<br>
+							 С 8:00 до 20:00 (по МСК) 
+						</div>
+						<div class="header__menu-contacts">
+							<div class="header__menu-contact">
+								Почта: 
+								<a href="mailto:info@standart-express.ru" class="underline">info@standart-express.ru</a>
+							</div>
+							<div class="header__menu-contact">
+								Тел: 
+								<a href="tel:8 (800) 600-22-78" class="phone">8 (800) 600-22-78</a>
+							</div>
+						</div>
+						<a href="" class="header__menu-consult">Заказать консультацию</a>
+						<div class="header__menu-info">Выполняем заказы 24/7</div>
+						<div class="header__menu-links">
+							<a href="https://vk.com/standart_express" target="_blank" class="social"> <i class="social-icon icon-vkontakte"></i> </a>
+							<a href="https://www.youtube.com/user/StandartExpress/featured" target="_blank" class="social"> <i class="social-icon icon-youtube-play"></i> </a>
+							<a href="https://api.whatsapp.com/send?phone=79274527554" target="_blank" class="social"> <i class="social-icon icon-whatsapp"></i> </a>
+							<a href="https://t.me/standartexpress_ru" target="_blank" class="social"> <i class="social-icon icon-paper-plane"></i> </a>
+						</div>
+						<div class="header__menu-pages">
+							<a href="https://moskva.standart-express.ru/privacy-policy/" target="_blank">Политика конфиденциальности</a>
+							<br>
+							<br>
+							<a href="https://moskva.standart-express.ru/privacy-policy/" target="_blank">Пользовательское соглашение</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="page" class="site">
+		<section class="promo-one">
+		    <div class="_container">
+		        <div class="promo__top">
+		            <div class="promo__top-description">
+		                <div class="promo__title">
+		                    <h1>Услуги грузчиков для бизнеса и государств </h1>
+		                    <span>от 249 руб./час</span>
+		                </div>
+		                <div class="promo__description">Работаем в 1024 городах России</div>
+		                <div class="promo__icons-mob" style="display: none;">
+		                    <div class="promo__icon">
+		                        <noscript><img src="https://moskva.standart-express.ru/wp-content/webp-express/webp-images/uploads/2021/03/ikonka-rabotaem-s-2014.png.webp" alt="" /></noscript>
+		                        <img
+		                            class="lazyload"
+		                            src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E"
+		                            data-src="https://moskva.standart-express.ru/wp-content/webp-express/webp-images/uploads/2021/03/ikonka-rabotaem-s-2014.png.webp"
+		                            alt=""
+		                        />
+		                        <div class="promo__icon-name"><span>Работаем в 1047 городах</span> России</div>
+		                    </div>
+		                    <div class="promo__icon">
+		                        <noscript><img src="https://moskva.standart-express.ru/wp-content/webp-express/webp-images/uploads/2021/03/ico_min_zakaz.png.webp" alt="" /></noscript>
+		                        <img
+		                            class="lazyload"
+		                            src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E"
+		                            data-src="https://moskva.standart-express.ru/wp-content/webp-express/webp-images/uploads/2021/03/ico_min_zakaz.png.webp"
+		                            alt=""
+		                        />
+		                        <div class="promo__icon-name">Минимальный <span>заказ от 1200 руб.</span></div>
+		                    </div>
+		                    <div class="promo__icon">
+		                        <noscript><img src="https://moskva.standart-express.ru/wp-content/webp-express/webp-images/uploads/2021/03/Ikonka-klienty.png.webp" alt="" /></noscript>
+		                        <img
+		                            class="lazyload"
+		                            src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E"
+		                            data-src="https://moskva.standart-express.ru/wp-content/webp-express/webp-images/uploads/2021/03/Ikonka-klienty.png.webp"
+		                            alt=""
+		                        />
+		                        <div class="promo__icon-name"><span>Более 300</span> постоянных <span>клиентов</span></div>
+		                    </div>
+		                </div>
+		                <div class="promo__form">
+		                    <form action="">
+		                    	<span class="promo__form-row">
+			                    	<span class="promo__form-wrap form-control">
+			                    		<input type="tel" name="tel-237" value="" size="40" class="promo__form-input font-control" aria-required="true" aria-invalid="false" placeholder="+7 (9__) ___-__-__">
+			                    	</span>
+			                    	<input type="submit" value="Рассчитать стоимость" class="promo__form-submit">
+		                    	</span>
+		                    </form>
+		                </div>
+		                <div class="promo__bottom">Отправляя заявку вы соглашаетесь с <a href="">политикой обработки персональных данных</a></div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+		<section class="about-us">
+			<div class="_container">
+				<div class="about__row">
+					<div class="about__img">
+						<img src="img/hello.png" alt="">
+					</div>
+					<div class="about__info">
+						<h2 class="about__title">Здравствуйте!</h2>
+						<div class="about__text">
+							Меня зовут Лукманов Марат. Я являюсь учредителем компании ООО «Стандарт Экспресс».
+							Наша команда занимается предоставлением услуг грузчиков и такелажных работ по всей России с 2014 года. С почасовой либо сдельной оплатой. На разовые работы и постоянной основе. 
+							<br>
+							<br>
+							Мы хотели бы предложить долгосрочное сотрудничество с вашей компанией, оказание погрузочно-разгрузочных и такелажных работ по всей территории России.
+						</div>
+						<a href="" class="about__btn">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</a>
+					</div>
+				</div>
+				<div class="about__why">
+					<div class="section__title">ПОЧЕМУ МЫ?</div>
+					<div class="about__why-grid">
+						<div class="about__item about__item-long about__1">
+							<div class="about__ico">
+								<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.91 31.8V26.1C12.91 21.037 14.9213 16.1814 18.5013 12.6013C22.0814 9.02127 26.937 7.01001 32 7.01001C37.063 7.01001 41.9186 9.02127 45.4987 12.6013C49.0787 16.1814 51.09 21.037 51.09 26.1V31.8" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M12.06 31.8H16.76V45.18H12.06C11.2643 45.18 10.5013 44.8639 9.93868 44.3013C9.37607 43.7387 9.06 42.9757 9.06 42.18V34.8C9.06 34.0044 9.37607 33.2413 9.93868 32.6787C10.5013 32.1161 11.2643 31.8 12.06 31.8V31.8Z" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M51.94 45.18H47.24V31.8H51.94C52.7357 31.8 53.4987 32.1161 54.0613 32.6787C54.6239 33.2413 54.94 34.0043 54.94 34.8V42.18C54.94 42.9756 54.6239 43.7387 54.0613 44.3013C53.4987 44.8639 52.7357 45.18 51.94 45.18V45.18Z" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M51.7 45.56V50.56C51.7 51.6209 51.2786 52.6383 50.5284 53.3884C49.7783 54.1386 48.7609 54.56 47.7 54.56H36.56" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M34.55 51.92H30.45C29.3454 51.92 28.45 52.8154 28.45 53.92V54.99C28.45 56.0946 29.3454 56.99 30.45 56.99H34.55C35.6546 56.99 36.55 56.0946 36.55 54.99V53.92C36.55 52.8154 35.6546 51.92 34.55 51.92Z" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+								</svg>
+							</div>
+							<div class="about__company">
+								<div class="about__company-img">
+									<img src="img/cm1.png" alt="">
+								</div>
+								<div class="about__company-img">
+									<img src="img/cm2.png" alt="">
+								</div>
+								<div class="about__company-img">
+									<img src="img/cm3.png" alt="">
+								</div>
+								<div class="about__company-img">
+									<img src="img/cm4.png" alt="">
+								</div>
+							</div>
+							<div class="about__big">За каждым клиентом закрепляется персональный менеджер, который будет на связи 24/7</div>
+						</div>
+						
+						<div class="about__item about__item-short about__2">
+							<div class="about__ico">
+								<svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 0.666656V1.66666V3.33332H32.6667V1.66666V0.666656H34.6667V1.66666V3.33332H41.6667H42.6667V4.33332V12.3333V24.6956C51.5901 25.2132 58.6667 32.6135 58.6667 41.6667C58.6667 51.0555 51.0556 58.6667 41.6667 58.6667C32.2779 58.6667 24.6667 51.0555 24.6667 41.6667C24.6667 41.1045 24.694 40.5486 24.7474 40H1.66672H0.666718V39V12.3333V4.33332V3.33332H1.66672H8.66672V1.66666V0.666656H10.6667ZM8.66672 5.33332H2.66672V11.3333H40.6667V5.33332H34.6667V6.99999V7.99999H32.6667V6.99999V5.33332H10.6667V6.99999V7.99999H8.66672V6.99999V5.33332ZM40.6667 13.3333H2.66672V38H25.0634C26.6711 30.6884 32.9837 25.1412 40.6667 24.6956V13.3333ZM41.6667 26.6667C34.2352 26.6667 28.0642 32.0719 26.8742 39.1654C26.7378 39.9782 26.6667 40.8138 26.6667 41.6667C26.6667 49.9509 33.3824 56.6667 41.6667 56.6667C49.951 56.6667 56.6667 49.9509 56.6667 41.6667C56.6667 33.3824 49.951 26.6667 41.6667 26.6667ZM42.6667 31.3333V32.3333V41.2524L46.3738 44.9595L47.0809 45.6667L45.6667 47.0809L44.9596 46.3738L40.9596 42.3738L40.6667 42.0809V41.6667V32.3333V31.3333H42.6667Z" fill="#FFAE3A"/>
+								</svg>
+							</div>	
+							<div class="about__big">работаем<br>с 2014 года</div>			
+						</div>
+						<div class="about__item about__item-short about__3">
+							<div class="about__ico">
+								<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_931_3422)">
+									<path d="M29.5518 43.4081C30.0363 42.9194 30.0363 42.1283 29.5518 41.6396C29.0668 41.1523 28.281 41.1523 27.7955 41.6396C27.3115 42.1283 27.3115 42.9194 27.7955 43.4081C28.281 43.8954 29.0668 43.8954 29.5518 43.4081Z" fill="#FFAE3A"/>
+									<path d="M23.6747 13.7461C23.6747 21.3257 29.8001 27.4927 37.329 27.4927C44.858 27.4927 50.9833 21.3257 50.9833 13.7461C50.9833 6.16651 44.858 0 37.329 0C29.8001 0 23.6747 6.16651 23.6747 13.7461V13.7461ZM48.5009 13.7461C48.5009 19.9478 43.4892 24.9932 37.329 24.9932C31.1688 24.9932 26.1571 19.9478 26.1571 13.7461C26.1571 7.54492 31.1688 2.49951 37.329 2.49951C43.4892 2.49951 48.5009 7.54492 48.5009 13.7461Z" fill="#FFAE3A"/>
+									<path d="M14.6364 63.6304C15.1175 64.1187 15.9008 64.1241 16.3883 63.6407L22.4064 57.6719C23.4288 56.6426 23.7397 55.1187 23.2901 53.794L24.5846 52.5371C25.2816 51.8594 26.1992 51.4859 27.1693 51.4859H43.6711C46.5987 51.4859 49.3657 50.354 51.4634 48.2989C51.5497 48.2144 50.8081 49.0938 62.7212 34.7598C64.4881 32.6553 64.2238 29.4951 62.1314 27.7144C60.0521 25.9502 56.9373 26.2036 55.1656 28.272L47.8408 35.8511C46.9159 34.7051 45.5054 33.9908 43.9815 33.9908H30.1395C28.1699 33.1612 26.0799 32.7412 23.9235 32.7412C17.9462 32.7412 12.7269 35.5205 9.92588 40.7315C8.74583 40.5064 7.50127 40.8658 6.60592 41.7671L0.700812 47.7295C0.218703 48.2163 0.217733 49.0039 0.698872 49.4922L14.6364 63.6304ZM23.923 35.2403C25.8243 35.2403 27.6625 35.6255 29.3878 36.3853C29.5449 36.4546 29.7142 36.4903 29.8854 36.4903H43.9815C45.3274 36.4903 46.4643 37.5952 46.4643 38.9893C46.4643 40.3677 45.3507 41.4888 43.9815 41.4888H33.8538C33.1685 41.4888 32.6127 42.0484 32.6127 42.7383C32.6127 43.4287 33.1685 43.9878 33.8538 43.9878H43.9815C46.7194 43.9878 48.9466 41.7456 48.9466 38.9893C48.9466 38.7696 48.9311 38.5518 48.903 38.336C55.9886 31.0034 56.9878 29.9732 57.0305 29.9219C57.9151 28.8706 59.4856 28.7373 60.5304 29.624C61.5761 30.5142 61.7085 32.0943 60.8214 33.1514L49.6878 46.5508C48.062 48.1221 45.9274 48.9869 43.6711 48.9869H27.1693C25.5522 48.9869 24.0215 49.6094 22.8604 50.7388L21.8055 51.7637L12.0808 41.9742C14.3536 37.6817 18.6184 35.2403 23.923 35.2403V35.2403ZM8.36266 43.5332C8.77202 43.1211 9.4006 43.0469 9.89969 43.3575C10.1146 43.4893 9.49761 42.9239 20.6511 54.1368C21.1473 54.6363 21.1206 55.4322 20.6579 55.898L15.5274 60.9864L3.33059 48.6138L8.36266 43.5332Z" fill="#FFAE3A"/>
+									<path d="M35.8399 6.24832V7.71268C34.395 8.2283 33.3571 9.61746 33.3571 11.2469C33.3571 13.3138 35.0275 14.9959 37.081 14.9959C37.7654 14.9959 38.3222 15.5564 38.3222 16.2454C38.3222 16.9344 37.7654 17.4949 37.081 17.4949C36.5509 17.4949 35.9781 17.1595 35.4693 16.5496C35.0279 16.0213 34.2451 15.9534 33.7203 16.3973C33.1955 16.8416 33.1276 17.6297 33.569 18.158C34.2325 18.9524 35.0129 19.5061 35.8399 19.7854V21.2439C35.8399 21.9344 36.3957 22.4934 37.081 22.4934C37.7664 22.4934 38.3222 21.9344 38.3222 21.2439V19.7796C39.7671 19.2635 40.805 17.8743 40.805 16.2454C40.805 14.178 39.1346 12.4964 37.081 12.4964C36.3967 12.4964 35.8399 11.9358 35.8399 11.2469C35.8399 10.5579 36.3967 9.99686 37.081 9.99686C37.5209 9.99686 37.9851 10.2229 38.4236 10.6502C38.9163 11.1302 39.7021 11.117 40.1789 10.6214C40.6556 10.1253 40.6425 9.33426 40.1502 8.85428C39.5202 8.24051 38.8897 7.89334 38.3222 7.70389V6.24832C38.3222 5.55789 37.7664 4.99832 37.081 4.99832C36.3957 4.99832 35.8399 5.55789 35.8399 6.24832V6.24832Z" fill="#FFAE3A"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_931_3422">
+									<rect width="63.4483" height="64" fill="white" transform="translate(0.275818)"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</div>	
+							<div class="about__big">почасовая или сдельная<br>система оплаты</div>			
+						</div>
+						<div class="about__item about__item-short about__4">
+							<div class="about__ico">
+								<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M32.1098 33.2505H32.0661C31.5295 33.2505 31.0947 33.6734 31.0947 34.1953C31.0947 34.7168 31.5295 35.1397 32.0661 35.1397H32.1098C32.6459 35.1397 33.0807 34.7168 33.0807 34.1953C33.0807 33.6734 32.6459 33.2505 32.1098 33.2505V33.2505Z" fill="#FFAE3A"/>
+									<path d="M63.1089 44.6841C62.5883 44.146 61.901 43.7891 61.1631 43.6607V36.9859C61.1631 34.4824 59.4226 33.0996 57.7851 33.0689C56.4211 33.041 55.3925 33.9282 55.3433 35.1719C55.3142 35.895 53.6982 36.0195 52.4141 36.0386L51.4171 32.8403C51.4156 32.835 51.4136 32.8296 51.4121 32.8242C50.4276 29.8604 48.009 29.188 45.6701 28.5381C45.3573 28.4507 45.0341 28.3609 44.7118 28.2656L39.5059 26.7251C41.4246 25.0059 42.9015 22.8101 43.5486 20.6284C44.2339 20.4619 44.9156 20.0864 45.4718 19.5523C46.2173 18.8369 46.6445 17.9317 46.6445 17.0684V16.0122C46.6445 15.126 46.0526 14.3726 45.2339 14.104C45.2559 13.9815 45.2695 13.856 45.2695 13.7271V12.5825C45.2695 11.6631 44.6761 10.8779 43.8433 10.5654C43.1857 6.65041 40.5647 3.3423 36.8307 1.73634C36.4216 0.721207 35.4045 1.52588e-05 34.2168 1.52588e-05H29.7765C28.5978 1.52588e-05 27.5878 0.711929 27.1741 1.7173C23.407 3.32082 20.7675 6.64894 20.1164 10.5947C19.3262 10.9258 18.771 11.6919 18.771 12.5825V13.7271C18.771 13.8706 18.786 14.0108 18.8137 14.1465C18.0581 14.4458 17.523 15.169 17.523 16.0122V17.0684C17.523 17.9317 17.9507 18.8374 18.6967 19.5532C19.2534 20.0879 19.9351 20.4629 20.6204 20.6294C21.268 22.814 22.7434 25.0088 24.6606 26.7261L22.2921 27.4282C22.2569 27.4361 22.2228 27.4463 22.1887 27.459L19.4663 28.2656C19.1445 28.3609 18.8212 28.4507 18.5084 28.5376C16.1696 29.188 13.7514 29.8604 12.767 32.8242C12.765 32.8296 12.7635 32.8345 12.7619 32.8399L11.7625 36.042C10.4442 36.0396 8.46175 35.9736 8.42911 35.1724C8.37992 33.9277 7.3503 33.044 5.98684 33.0689C4.34979 33.0996 2.60933 34.4824 2.60933 36.9854V43.708C1.95873 43.8652 1.35833 44.2022 0.891961 44.6841C0.266458 45.3311 -0.0477989 46.1597 0.00641804 47.0171L0.267462 51.1924C0.361338 52.6777 1.30612 53.8736 2.60933 54.3101V57.7398C2.60933 62.4707 4.66054 63.9893 11.0496 63.9893L30.6796 64H30.6801C31.2163 64 31.651 63.5772 31.651 63.0557C31.6515 62.5342 31.2168 62.1109 30.6806 62.1109L11.0501 62.1001C5.11184 62.1001 4.5516 60.9043 4.5516 57.7398V54.4883H5.37992C5.63243 54.4883 5.8749 54.4751 6.10682 54.4487C7.11084 54.3355 7.91807 53.9761 8.51195 53.377C9.83574 52.0425 9.75743 49.9312 9.68815 48.0684C9.67359 47.6763 9.65954 47.3057 9.65954 46.96C9.65954 45.1109 8.11436 43.6065 6.21425 43.6065H4.5516V36.9854C4.5516 35.4033 5.51496 34.9673 6.02449 34.9575C6.3262 34.9522 6.48032 35.0488 6.48785 35.2461C6.51646 35.9502 6.86636 37.2036 8.89046 37.6875C9.93112 37.9365 11.149 37.9331 12.1279 37.9307L51.3724 37.9302L51.644 37.9307H51.653C51.6671 37.9312 51.6806 37.9341 51.6952 37.9341C51.7098 37.9341 51.7253 37.9312 51.7404 37.9307C52.7022 37.9326 53.8739 37.9282 54.882 37.687C56.9056 37.2036 57.2555 35.9502 57.2841 35.2451C57.2921 35.0488 57.4477 34.9517 57.7479 34.9575C58.257 34.9668 59.2203 35.4033 59.2203 36.9854V43.606H57.7866C55.8865 43.606 54.3413 45.1104 54.3413 46.9595C54.3413 47.3057 54.3272 47.6758 54.3127 48.0684C54.2434 49.9307 54.1651 52.042 55.4889 53.377C56.0828 53.9761 56.89 54.335 57.894 54.4487C58.1259 54.4751 58.3684 54.4883 58.6209 54.4883H59.2203V57.7393C59.2203 60.9043 58.6606 62.1001 52.7253 62.1001L35.1088 62.1069C34.5727 62.1074 34.138 62.5303 34.138 63.0523C34.1385 63.5737 34.5732 63.9966 35.1094 63.9966H35.1099L52.7258 63.9893C59.1129 63.9893 61.1631 62.4707 61.1631 57.7393V54.3775C62.5828 54.0108 63.634 52.7632 63.7329 51.1919L63.9944 47.0176C64.0486 46.1597 63.7339 45.3311 63.1089 44.6841V44.6841ZM6.21425 45.4956C7.04307 45.4956 7.71727 46.1528 7.71727 46.96C7.71727 47.0547 7.71827 47.1504 7.71978 47.2466C7.7248 47.5347 7.73534 47.8296 7.74688 48.1367C7.77801 48.9727 7.81114 49.8721 7.7012 50.6333C7.61536 51.2256 7.44267 51.7344 7.11435 52.0654C6.75793 52.4243 6.19116 52.5991 5.37992 52.5991H3.71124C2.90803 52.5991 2.26094 51.9448 2.20622 51.0777L1.94517 46.9019C1.92409 46.5698 2.0526 46.2417 2.30712 45.9785C2.60381 45.6714 3.02048 45.4956 3.4502 45.4956H6.21425ZM18.39 36.041H13.7926L14.6179 33.397C15.1962 31.6636 16.3373 31.1348 18.39 30.5391V36.041ZM35.9101 34.9331C35.9688 34.9448 36.028 34.9551 36.0878 34.9629C36.2057 34.9785 36.3227 34.9863 36.4382 34.9863C37.278 34.9863 38.0496 34.584 38.644 33.8257L42.0185 29.4434L43.8353 29.981V36.041H35.9101V34.9331ZM40.0421 28.8584L37.0943 32.6865C36.7595 33.1143 36.4999 33.1006 36.402 33.0957C36.1159 33.0806 35.8282 32.8877 35.6882 32.7495C35.6736 32.7329 35.658 32.7168 35.6425 32.7012C35.6345 32.6914 35.6249 32.6807 35.6189 32.6724L34.3599 29.6548C34.6144 29.5816 34.8734 29.4971 35.1405 29.4004C36.0059 29.0864 36.8458 28.6602 37.6425 28.1485L40.0421 28.8584ZM44.7022 17.0684C44.7022 17.4243 44.4798 17.8501 44.1073 18.2075C44.0431 18.2691 43.9758 18.3257 43.907 18.3794C43.9075 18.3545 43.9091 18.3291 43.9091 18.3042L43.9357 15.8867H44.5742C44.6425 15.8867 44.7022 15.9453 44.7022 16.0122V17.0684ZM29.7765 1.88918H34.2168C34.6937 1.88918 35.0812 2.26564 35.0812 2.72853V5.82228C35.0812 6.28517 34.6937 6.66115 34.2168 6.66115H29.7765C29.3016 6.66115 28.9156 6.28517 28.9156 5.82228V2.72853C28.9156 2.26564 29.3016 1.88918 29.7765 1.88918V1.88918ZM26.9733 3.92775V5.82228C26.9733 7.32668 28.2308 8.5508 29.7765 8.5508H34.2168C35.7645 8.5508 37.024 7.32668 37.024 5.82228V3.94826C39.4964 5.33986 41.2464 7.68166 41.8408 10.4194H22.1234C22.7193 7.66701 24.4823 5.31691 26.9733 3.92775ZM20.0606 18.2085C19.6882 17.8506 19.4653 17.4243 19.4653 17.0684V16.0122C19.4653 15.9463 19.5245 15.8867 19.5898 15.8867H20.2323L20.2584 18.294C20.2584 18.3223 20.2604 18.3511 20.2609 18.3794C20.1917 18.3257 20.1244 18.2695 20.0606 18.2085ZM22.3839 19.7398C22.3789 19.6338 22.3563 19.5327 22.3187 19.4385C22.2429 19.0479 22.2007 18.6611 22.2007 18.2842L22.1751 15.8877L30.1023 15.8941H30.1028C30.639 15.8941 31.0737 15.4717 31.0742 14.9502C31.0747 14.4282 30.64 14.0049 30.1038 14.0044L21.1967 13.9976C21.1957 13.9976 21.1947 13.9976 21.1937 13.9976H20.9899C20.8403 13.9976 20.7133 13.8736 20.7133 13.7271V12.5825C20.7133 12.4341 20.8403 12.3086 20.9899 12.3086H43.0471C43.1992 12.3086 43.3272 12.4341 43.3272 12.5825V13.7271C43.3272 13.8736 43.1992 13.9976 43.0471 13.9976H34.5361C33.9999 13.9976 33.5652 14.4204 33.5652 14.9419C33.5652 15.4639 33.9999 15.8867 34.5361 15.8867H41.9929L41.9668 18.294C41.9668 18.6597 41.9271 19.0342 41.8548 19.4141C41.8076 19.5225 41.7805 19.6411 41.7785 19.7661C41.0034 22.9478 37.9166 26.3765 34.4623 27.6304C32.7077 28.2656 31.4658 28.2666 29.7153 27.6333C28.8553 27.3233 28.019 26.8775 27.2343 26.3345C27.2288 26.3306 27.2228 26.3267 27.2173 26.3233C24.8458 24.6768 22.9592 22.1402 22.3839 19.7398ZM28.2574 36.041H20.3322V29.9839L22.153 29.4444L25.5285 33.8316C26.1184 34.5845 26.8895 34.9863 27.7293 34.9863C27.8443 34.9863 27.9618 34.9785 28.0792 34.9629C28.1395 34.9551 28.1987 34.9448 28.2574 34.9331V36.041ZM28.526 32.7007C28.51 32.7168 28.4944 32.7329 28.4793 32.75C28.3388 32.8877 28.0516 33.0811 27.766 33.0957C27.6676 33.1006 27.4085 33.1143 27.0787 32.6934L24.1284 28.8589L26.524 28.1489C27.3242 28.6631 28.1691 29.0908 29.0391 29.4048C29.3026 29.5 29.5591 29.583 29.8107 29.6558L28.5491 32.6724C28.5436 32.6807 28.5335 32.6909 28.526 32.7007V32.7007ZM30.2002 33.6665C30.2564 33.5791 30.3036 33.4922 30.3388 33.4068L31.7675 29.9907C31.8729 29.9951 31.9783 29.9986 32.0837 29.9986C32.1902 29.9986 32.2966 29.9951 32.4035 29.9902L33.8282 33.4053C33.8639 33.4907 33.9111 33.5786 33.9678 33.666V36.041H30.1997V33.6665H30.2002ZM45.7775 36.041V30.5357C47.8373 31.1333 48.9813 31.6602 49.5607 33.397L50.3855 36.041H45.7775ZM62.0557 46.9024L61.7946 51.0772C61.7399 51.9448 61.0928 52.5986 60.2901 52.5986H58.6209C57.8102 52.5986 57.2429 52.4243 56.887 52.0654C56.5587 51.7339 56.386 51.2256 56.3001 50.6333C56.1897 49.8721 56.2228 48.9727 56.2539 48.1367C56.2695 47.7271 56.2836 47.3399 56.2836 46.96C56.2836 46.1524 56.9578 45.4956 57.7866 45.4956H60.5511C60.9804 45.4956 61.397 45.6714 61.6937 45.9785C61.9482 46.2417 62.0767 46.5698 62.0557 46.9024V46.9024Z" fill="#FFAE3A"/>
+								</svg>
+							</div>	
+							<div class="about__big">весь персонал граждане<br>рф</div>			
+						</div>
+						<div class="about__item about__item-short about__5">
+							<div class="about__ico">
+								<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M45.7705 51C45.7862 50.9878 45.8056 50.9813 45.8255 50.9813C45.8454 50.9813 45.8647 50.9878 45.8805 51L49.2805 54.31C49.2805 54.31 49.4005 54.31 49.4005 54.24V9.70001H14.6005V54.16C14.5989 54.1757 14.6021 54.1915 14.6095 54.2055C14.6169 54.2194 14.6283 54.2308 14.6422 54.2383C14.6561 54.2458 14.6719 54.249 14.6876 54.2475C14.7033 54.246 14.7182 54.24 14.7305 54.23L19.1105 50.94C19.1247 50.9286 19.1423 50.9225 19.1605 50.9225C19.1787 50.9225 19.1963 50.9286 19.2105 50.94L23.7405 54.27C23.7553 54.2841 23.775 54.2919 23.7955 54.2919C23.8159 54.2919 23.8356 54.2841 23.8505 54.27L27.8505 50.94C27.8505 50.94 27.9205 50.94 27.9605 50.94L32.4805 54.26C32.4953 54.2741 32.515 54.2819 32.5355 54.2819C32.5559 54.2819 32.5756 54.2741 32.5905 54.26L36.7905 51C36.807 50.9853 36.8283 50.9771 36.8505 50.9771C36.8726 50.9771 36.894 50.9853 36.9105 51L41.4205 54.31C41.437 54.3248 41.4583 54.3329 41.4805 54.3329C41.5026 54.3329 41.524 54.3248 41.5405 54.31L45.5405 51.01" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M18.7205 31.11H32.0205" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M18.7205 25.77H34.6905" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M18.7205 15H36.0505" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M18.7205 20.11H33.1505" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M18.7205 36.81H34.6905" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M41.8605 36.66H45.2805" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M41.0105 42.56H45.2805" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+									<path d="M41.0105 15H45.2805" stroke="#FFAE3A" stroke-width="2" stroke-linecap="round"/>
+								</svg>
+							</div>	
+							<div class="about__big">постоплата<br> до 45 дней</div>			
+						</div>
+					</div>
+				</div>			
+			</div>
+		</section>
+		<section class="clients">
+			<div class="_container">
+				<div class="section__title">Клиенты</div>
+				<div class="clients__info">Краткий список клиентов, пользующихся на данный момент нашими услугами. Сотрудничаем с этими клиентами от одного до пяти лет, за этот период зарекомендовали себя как надежного исполнителя. Имеем <a class="letters">рекомендательные и благодарственные письма.</a></div>
+				<div class="clients__slider-wrapper">
+					<div class="swiper-button-prev"></div>
+					<div class="clients__slider swiper">
+						  <div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/linii.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/pack.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/rostelekom.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/pochta.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/mig.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/pochta.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/pack.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/pochta.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/rostelekom.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/pochta.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/mig.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/pochta.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/linii.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/pack.png" alt="">
+								</div>
+						  </div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+		<section class="video">
+			<div class="_container">
+				<div class="video__title">Краткий видеоролик в 1,5 минутах расскажет обо всех наших услугах и преимуществах</div>
+				<div class="promo__player">
+					<a href="" class="promo__watch">
+						<img src="img/play1.png" alt="">
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="works">
+			<div class="_container">
+				<div class="works__content">
+					<div class="works__item">
+						<a data-fancybox="works" class="works__item-img" data-src="img/workBig.png">
+							<img src="img/work1.png" alt="">
+						</a>
+						<div class="works__item-text">Погрузочно-разгрузочные работы</div>
+					</div>
+					<div class="works__item">
+						<a data-fancybox="works" class="works__item-img" data-src="img/workBig.png">
+							<img src="img/work2.png" alt="">
+						</a>
+						<div class="works__item-text">Погрузочно-разгрузочные работы</div>
+					</div>
+					<div class="works__item">
+						<a data-fancybox="works" class="works__item-img" data-src="img/workBig.png">
+							<img src="img/work3.png" alt="">
+						</a>
+						<div class="works__item-text">Погрузочно-разгрузочные работы</div>
+					</div>
+					<div class="works__item">
+						<a data-fancybox="works" class="works__item-img" data-src="img/workBig.png">
+							<img src="img/work4.png" alt="">
+						</a>
+						<div class="works__item-text">Погрузочно-разгрузочные работы</div>
+					</div>
+					<div class="works__item">
+						<a data-fancybox="works" class="works__item-img" data-src="img/workBig.png">
+							<img src="img/work5.png" alt="">
+						</a>
+						<div class="works__item-text">Погрузочно-разгрузочные работы</div>
+					</div>
+					<div class="works__item">
+						<a data-fancybox="works" class="works__item-img" data-src="img/workBig.png">
+							<img src="img/work6.png" alt="">
+						</a>
+						<div class="works__item-text">Погрузочно-разгрузочные работы</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<div class="_container">
+			<div class="footer__card">
+				<div class="section__title">Контакты</div>
+				<div class="footer__card-row">
+					<div class="footer__card-item">
+						<div class="footer__item-title">Диспетчерский отдел: </div>
+						<a href="tel:8 (800) 600-22-78" class="footer__item__contact">8 (800) 600-22-78</a>
+					</div>
+					<div class="footer__card-item">
+						<div class="footer__item-title">Отдел по работе с корпоративными клиентами: </div>
+						<a href="tel:+7 (927) 448-01-00" class="footer__item__contact">+7(927) 448-01-00</a>
+					</div>
+					<div class="footer__card-item">
+						<div class="footer__item-title">Email:</div>
+						<a href="mail:info@standart-express.ru" class="footer__item__contact">info@standart-express.ru </a>
+					</div>
+				</div>
+				<div class="footer__card-bottom">
+					<a class="footer__card-btn">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</a>
+					<div class="footer__card-links">
+						<a class="footer__card-link">
+							<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<ellipse cx="27.481" cy="27.5557" rx="27.4048" ry="27.3607" fill="#F6F6F6"/>
+								<path d="M28.0341 12.9641C19.7439 12.9641 12.9972 19.4519 12.9943 27.4251C12.9924 29.9749 13.6861 32.4634 15.0016 34.6552L12.8676 42.1488L20.8411 40.138C23.059 41.2963 25.5252 41.9005 28.0282 41.8988H28.0341C36.3242 41.8988 43.0709 35.4101 43.0739 27.4368C43.0758 23.5747 41.5129 19.9393 38.6725 17.2066C35.8331 14.473 32.0574 12.9651 28.0341 12.9641ZM28.0341 39.456H28.0292C25.7862 39.456 23.586 38.8762 21.6664 37.7808L21.2085 37.5201L16.4788 38.7128L17.7416 34.2767L17.4444 33.8224C16.1961 31.9217 15.5316 29.698 15.5326 27.4251C15.5355 20.7973 21.1442 15.4069 28.039 15.4069C31.3772 15.4078 34.5158 16.6599 36.8767 18.9314C39.2377 21.203 40.5365 24.2236 40.5346 27.4358C40.5317 34.0637 34.924 39.456 28.0331 39.456H28.0341ZM34.8909 30.4526C34.5148 30.2726 32.6673 29.398 32.3224 29.2764C31.9784 29.1568 31.728 29.0945 31.4776 29.4564C31.2282 29.8183 30.5071 30.6325 30.2888 30.8728C30.0686 31.1141 29.8494 31.1433 29.4733 30.9633C29.0972 30.7823 27.886 30.401 26.4517 29.1694C25.334 28.2121 24.5799 27.0292 24.3606 26.6663C24.1414 26.3054 24.3372 26.1099 24.5253 25.9299C24.6939 25.7694 24.9014 25.5087 25.0885 25.2976C25.2756 25.0865 25.3379 24.9357 25.4646 24.6944C25.5893 24.4541 25.527 24.2421 25.4325 24.0621C25.3379 23.8802 24.5877 22.1018 24.2729 21.379C23.9689 20.6747 23.6591 20.7691 23.4281 20.7574C23.2089 20.7477 22.9594 20.7448 22.7071 20.7448C22.4586 20.7448 22.0503 20.8352 21.7054 21.1971C21.3614 21.559 20.39 22.4326 20.39 24.2109C20.39 25.9902 21.7366 27.7082 21.9246 27.9495C22.1127 28.1898 24.575 31.8408 28.3449 33.407C29.2414 33.7777 29.941 34.0004 30.4876 34.1678C31.388 34.4431 32.2074 34.4032 32.8544 34.3108C33.5755 34.2067 35.078 33.4372 35.3898 32.5937C35.7036 31.7503 35.7036 31.0265 35.61 30.8757C35.5184 30.7249 35.267 30.6345 34.8909 30.4526Z" fill="#313131"/>
+							</svg>
+						</a>
+						<a class="footer__card-link">
+							<svg width="55" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_931_3306)">
+								<path d="M27.7469 54.9162C42.8822 54.9162 55.1518 42.6664 55.1518 27.5555C55.1518 12.4446 42.8822 0.194824 27.7469 0.194824C12.6117 0.194824 0.342087 12.4446 0.342087 27.5555C0.342087 42.6664 12.6117 54.9162 27.7469 54.9162Z" fill="#F6F6F6"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7505 27.2672C20.7396 23.7921 26.0669 21.5011 28.7324 20.3942C36.3431 17.2338 37.9245 16.6848 38.9552 16.6667C39.1819 16.6627 39.6888 16.7188 40.0172 16.9848C40.2944 17.2094 40.3707 17.5128 40.4072 17.7258C40.4437 17.9387 40.4892 18.4238 40.453 18.8029C40.0406 23.1292 38.2561 33.6282 37.3482 38.4738C36.964 40.5241 36.2076 41.2116 35.4753 41.2789C33.8839 41.4251 32.6754 40.2288 31.134 39.2201C28.722 37.6415 27.3594 36.6589 25.0181 35.1185C22.3124 33.3384 24.0664 32.36 25.6084 30.761C26.012 30.3425 33.0239 23.9749 33.1596 23.3972C33.1766 23.325 33.1924 23.0557 33.0321 22.9135C32.8719 22.7713 32.6354 22.8199 32.4647 22.8586C32.2228 22.9134 28.3696 25.4561 20.9052 30.4867C19.8115 31.2365 18.8208 31.6019 17.9332 31.5827C16.9548 31.5616 15.0725 31.0303 13.6733 30.5762C11.957 30.0193 10.593 29.7248 10.7118 28.7789C10.7737 28.2862 11.4532 27.7823 12.7505 27.2672Z" fill="#313131"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_931_3306">
+								<rect width="54.8097" height="54.7213" fill="white" transform="translate(0.34256 0.195068)"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<a href="" class="footer__link">
+					<img src="img/footer_logo.png" alt="">
+				</a>
+				<div class="footer__link">Все права защищены © 2022</div>
+				<a class="footer__link">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</footer>
+	<div class="popup__wrapper popup_call">
+		<div class="popup__opacity"></div>
+		<div class="popup__close">
+			<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.06006 8.06006L55.4101 55.9401" stroke="#E7E7E7" stroke-width="2"/>
+				<path d="M55.9401 8.06006L8.59009 55.9401" stroke="#E7E7E7" stroke-width="2"/>
+			</svg>
+		</div>
+		<div class="popup">
+			<form action="" class="popup__form">
+				<div class="popup__title">ФОРМА СВЯЗИ</div>
+				<div class="popup__form-group">
+					<input type="text" name="name-206" value="" size="40" class="popup__form-input" aria-required="true" aria-invalid="false" placeholder="Имя">
+				</div>
+				<div class="popup__form-group">
+					<input type="tel" name="tel-206" value="" size="40" class="popup__form-input" aria-required="true" aria-invalid="false" placeholder="+ 7">
+				</div>
+				<div class="popup__form-disclaimer">Отправляя заявку вы соглашаетесь с <a href="">политикой обработки персональных данных</a></div>
+				<input type="submit" value="Отправить" class="popup__form-submit">
+			</form>
+		</div>
+	</div>
+	<div class="popup__wrapper popup_letters">
+		<div class="popup__opacity"></div>
+		<div class="popup__close">
+			<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.06006 8.06006L55.4101 55.9401" stroke="#E7E7E7" stroke-width="2"/>
+				<path d="M55.9401 8.06006L8.59009 55.9401" stroke="#E7E7E7" stroke-width="2"/>
+			</svg>
+		</div>
+		<div class="popup__letters-slider">
+			<div class="popup__letters-slider-container">
+				<div class="swiper-button-prev"></div>
+					<div class="letters__slider swiper">
+					  <div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/letter1.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/letter2.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/letter3.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/letter4.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/letter5.webp" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/letter6.webp" alt="">
+							</div>
+					  </div>
+				</div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		const swiper = new Swiper('.clients__slider.swiper', {
+			slidesPerView: 3,
+			spaceBetween: 20,
+			breakpoints: {
+		    // when window width is >= 640px
+		    1191: {
+		      spaceBetween: 40,
+		    },
+		    991: {
+		      slidesPerView: 5,
+		      spaceBetween: 40,
+		    }
+		  },
+
+		  // Navigation arrows
+		  navigation: {
+		    nextEl: '.clients .swiper-button-next',
+		    prevEl: '.clients .swiper-button-prev',
+		  },
+		  pagination: {
+		    el: '.swiper-pagination',
+		  },
+		});
+
+		const swiperLetters = new Swiper('.letters__slider.swiper', {
+			slidesPerView: 1.5,
+			spaceBetween: 12,
+			breakpoints: {
+		    // when window width is >= 640px
+		    1191: {
+		    	slidesPerView: 3,
+		      spaceBetween: 40,
+		    },
+		    991: {
+		      slidesPerView: 3,
+		      spaceBetween: 10,
+		    },
+		    567: {
+		      slidesPerView: 2,
+		      spaceBetween: 10,
+		    },
+		  },
+
+		  // Navigation arrows
+		  navigation: {
+		    nextEl: '.popup__letters-slider .swiper-button-next',
+		    prevEl: '.popup__letters-slider .swiper-button-prev',
+		  },
+		});
+	</script>	
+</body>
+</html>
